@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        h1 {
+            color: skyblue;
+        }
+    </style>
+
+</head>
+
+<body>
+<h1 id="text">Data form</h1>
+<form id="details">
+    FirstName:
+    <label><input type="text" id="firstName" value="sandhia" /> </label>
+    <br>
+    LastName:
+    <label><input type="text" id="lastName" value="M" /> </label>
+    <br>
+    <input type="submit">
+</form>
+<p>If you click the "Submit" button, the form will be sent to a page
+</body>
+<script>
+    const formDetails = document.getElementById("details");
+    const fName = document.getElementById("firstName").value;
+    const lName = document.getElementById("lastName").value;
+    console.log("First Name=" + fName);
+    console.log("Last Name=" + lName);
+</script>
+</html>
+
